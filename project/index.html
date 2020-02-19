@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="main.css">
+        <title>CODEDMESSAGE site</title>
+    </head>
+    
+    <body>
+         <!-- this is a navigation cover -->
+            <div class="container">
+                <div class="upper-cover">
+                    <div class="nav-cover">
+                        <div class="left-column">    
+                            <div class="nav-cover-link">
+                                <a href="index.html">Home</a>
+                            </div>  
+                            <div class="nav-cover-link">    
+                                <a href="about.html">About me</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="right-column">
+                            <div class="brand">
+                                <div>C0DEDMESSAGE</div>
+                            </div>
+                        </div>    
+
+                    </div>
+                        <div class="header"><h1>Welcome</h1></div>
+                        <div class="paragraph1"><p>This is my first ever website.</p></div>
+                </div>   
+                        <!-- This is for the content of the main page. -->
+                    <div class="content-cover">
+                        
+                        <div class="project-items-cover">
+                            <div class="project-item-cover">
+                                <div class="project-img-background" style="background-image: url(images/math.jpg);"></div>
+                                
+                                <div class="img-text-cover">
+                                    <div class="logo-cover">
+                                        <a href="calculator.html"><img src="images/calculator.jpg" alt=""   ></a>
+                                    </div>
+                                    <div class="subtitle">This is a calculator made with HTML, CSS.</div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-item-cover">
+                                <div class="project-img-background" style="background-image: url(images/list.jpg);"></div>
+                                
+                                <div class="img-text-cover">
+                                    <div class="logo-cover">
+                                        <img src="images/list-logo.jpg" alt="" >
+                                    </div>
+                                    <div class="subtitle">A to do list.(Also a working progress)</div>
+                                </div>
+                            </div>
+
+                            <div class="project-item-cover">
+                                <div class="project-img-background" style="background-image: url(images/mountain.jpg);"></div>
+                                
+                                <div class="img-text-cover">
+                                    <div class="logo-cover">
+                                        <img src="images/hammer.jpg" alt="A Image of an calculation" >
+                                    </div>
+                                    <div class="subtitle">Working progress</div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
+        
+
+    </body>
+    <script>
+        const projectItemCover = document.querySelectorAll ('.project-item-cover')
+
+        projectItemCover.forEach(projectItem=> {
+            projectItem.addEventListener('mouseover', () => {
+                
+                projectItem.childNodes[1].classList.add('img-darken');
+            })
+            projectItem.addEventListener('mouseout', () => {
+                
+                projectItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+    
+
+</html>

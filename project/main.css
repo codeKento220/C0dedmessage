@@ -1,0 +1,152 @@
+body {
+    font-family: lato;
+    background-image: url(images/padlock.jpg);
+    background-color: none;
+    margin: 0px;
+}
+
+/* navigation bar style. */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-cover {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 38px;
+
+}
+
+.left-column {
+    display: flex;
+}
+
+.nav-cover > .left-column > div {
+    margin-right: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-cover-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.9sec;
+}
+.nav-cover-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.9sec;
+
+}
+.nav-cover-link:hover {
+    border-bottom: 1px solid black;
+
+}
+
+.nav-cover-link a:hover {
+    color: black;
+
+}
+/* this is for the background image around the navigation bar to the title */
+
+
+
+/* content style here */
+
+.header {
+    font-family: lato;
+    font-size: larger;
+    text-align: center;
+}
+
+.paragraph1 {
+    font-family: lato;
+    font-size: larger;
+    text-align: center;
+}
+
+
+.content-cover  {
+    align-self: auto;
+    padding: 200px;
+}
+
+.project-items-cover {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-item-cover {
+    position: relative;
+}
+
+.project-img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-cover {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 125px;
+
+
+}
+.logo-cover img {
+    position: relative;
+    width: 50%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+ /* need to specific selector */
+.img-text-cover .subtitle   {
+   transition: 1s;
+   font-weight: 600;
+   color: transparent; 
+}
+
+.img-text-cover:hover .subtitle {
+    font-weight: 600;
+    color: darkolivegreen;
+}
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%)
+}
+
+/* About page site */
+
+body {
+    background-image: url(images/padlock.jpg);
+}
+
+.two-column-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-cover {
+    width: 100%;
+    background-color: wheat;
+}
+.profile-content-cover h1 {
+    color: teal;
+    font-weight: 1000;
+    
+}
+.profile-content-cover {
+    background-color: wheat;
+    font-size: x-large;
+    font-weight: 600;
+}

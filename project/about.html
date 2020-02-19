@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="main.css">
+        <title>About Page</title>
+    </head>
+    
+    <body>
+         <!-- this is a navigation cover -->
+            <div class="container">
+                <div class="nav-cover">
+                    <div class="left-column">    
+                        <div class="nav-cover-link">
+                            <a href="index.html">Home</a>
+                        </div>  
+                        <div class="nav-cover-link">    
+                            <a href="about.html">About me</a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="right-column">
+                        <div class="brand">
+                            <div>C0DEDMESSAGE</div>
+                        </div>
+                    </div>    
+
+                </div>
+               
+               <!-- The content page -->
+                <div class="content-cover">
+                    <div class="two-column-cover">
+                        <div class="profile-img-cover">
+                            <img src="images/cat.jpg" alt="cat.jpg">
+                        </div>
+                        <div class="profile-content-cover">
+                            <h1>Hey! Thank you for Visiting my First site!!!</h1>
+                            <p>
+                               Welcome to my first ever webpage!! I am a aspiring code maker trying to make way to the IT industry. learning new stuff, making project and taking on new challenges.
+                               i now know the following languages:
+                            </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javescript</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+        
+
+    </body>
+    <script>
+        const projectItemCover = document.querySelectorAll ('.project-item-cover')
+
+        projectItemCover.forEach(projectItem=> {
+            projectItem.addEventListener('mouseover', () => {
+                
+                projectItem.childNodes[1].classList.add('img-darken');
+            })
+            projectItem.addEventListener('mouseout', () => {
+                
+                projectItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+    
+
+</html
